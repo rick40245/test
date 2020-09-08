@@ -1,0 +1,4 @@
+ - name: copy package
+   copy:
+     src: files/{{ service_name }}-{{ elk_version }}.rpm
+     dest: /tmp/{{ service_name }}-{{ elk_version }}.rpm

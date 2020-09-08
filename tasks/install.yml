@@ -1,0 +1,4 @@
+- name: install {{ service_name }}
+  yum:
+    name: /tmp/{{ service_name }}-{{ elk_version }}.rpm
+    state: present

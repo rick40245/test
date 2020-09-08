@@ -1,0 +1,5 @@
+- name: copy configuration template
+  template:
+    src: "{{ service_name }}.yml.j2"
+    dest: /etc/{{ service_name }}/{{ service_name }}.yml
+  notify: restart service
